@@ -1,0 +1,74 @@
+.mobileMenu {
+    height: 100vh;
+    width: 340px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transform: translateX(-100%);
+    transition: all .2s;
+    z-index: 100;
+
+    &--open {
+        transform: translateX(0);
+    }
+
+    &__container {
+        padding: 60px 60px;
+    }
+
+    &__logo {
+        font-family: $RedHatDisplay-BoldItalic;
+        text-decoration: underline;
+        font-size: rem(24);
+        line-height: rem(30);
+        color: $text-dark;
+    }
+
+    &__links {
+        display: flex;
+        margin-top: 40px;
+        justify-content: left;
+    }
+
+    &__menu {
+        
+    }
+
+    &__item {
+        
+    }
+
+    &__link {
+        display: inline-block;
+        font-size: rem(20);
+        line-height: rem(24);
+        text-align: center;
+        padding: 20px 0px;
+        transition: color .2s;
+        
+
+        &:hover {
+            color: $text-light;
+        }
+    }
+
+    &__icons {
+        margin-top: 40px;
+        display: flex;
+
+        svg {
+            width: 24px;
+            height: 24px;
+            transition: .2s ease;
+            &:hover {
+                opacity: .6;
+            }
+        }
+    }
+
+    &__icon:first-child {
+        margin-right: 24px;
+    }
+}

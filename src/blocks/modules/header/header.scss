@@ -1,0 +1,70 @@
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    background-color: $primary-background;
+    z-index: 100;
+
+    &__container {
+        justify-content: space-between;
+    }
+
+    &__logo {
+        font-family: $RedHatDisplay-BoldItalic;
+        text-decoration: underline;
+        font-size: rem(24);
+        line-height: rem(30);
+        color: $text-dark;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__menu {
+        display: flex;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 40px;
+    }
+
+    &__link {
+        transition: color .2s;
+
+        &:hover {
+            color: $text-light;
+        }
+    }
+
+    &__icon {
+        width: 24px;
+        height: 24px;
+        opacity: 1;
+        transition: .2s ease;
+
+        &:hover svg {
+            opacity: 0.6;
+        }
+    }
+
+    &__icon:not(:last-child) {
+        margin-right: 24px;
+    }
+
+    &__menu svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    @media only screen and (max-width: 800px) {
+        &__links {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    height: 100%;
+    overflow: hidden;
+    font-family: $RedHatDisplay-Regular;
+}
+
+.container {
+    max-width: 1280px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.row {
+    display: block;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: $text-dark;
+}
+
+p {
+    font-family: $RedHatDisplay-Regular;
+    font-size: rem(20);
+    line-height: rem(32);
+    color: $text-grey;
+}
+
+form {
+    position: relative;
+
+    input {
+        width: 100%;
+        padding: 14px 16px;
+        border: none;
+    }
+
+    button {
+        position: absolute;
+        top: 50%;
+        right: 8px;
+        transform: translateY(-50%);
+        background-color: $primary;
+        transition: background .2s;
+
+        &:hover {
+            background: $primary-hover
+        }
+    }
+}
+
+h1, h2 {
+    font-family: $RedHatDisplay-Medium;
+    font-size: rem(56);
+    line-height: rem(76);
+}

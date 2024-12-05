@@ -1,0 +1,84 @@
+.footer {
+    background-color: $grey-100;
+    
+    &__container {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        border-top: 1px solid $grey-400;
+        padding-top: 60px;
+        padding-bottom: 52px;
+    }
+
+    &__info {
+        max-width: 326px;
+    }
+
+    &__logo {
+        display: inline-block;
+        font-family: $RedHatDisplay-BoldItalic;
+        text-decoration: underline;
+        font-size: rem(40);
+        line-height: rem(50);
+        color: $text-dark;
+        margin-bottom: 38px;
+    }
+
+    &__text {
+        font-size: rem(18);
+        line-height: rem(32);
+    }
+
+    &__title {
+        font-family: $RedHatDisplay-Medium;
+        font-size: rem(20);
+        line-height: rem(24);
+        margin-bottom: 40px;
+    }
+
+    &__link a {
+        transition: color .2s;
+        word-break: keep-all;
+        
+
+        &:hover {
+            color: $text-light;
+        }
+    }
+
+    &__link:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    &__social {
+        margin-top: 20px;
+        
+        a {
+            display: inline-block;
+
+            &:not(:last-child) {
+                margin-right: 26px;
+            }
+        }
+
+        svg {
+            width: 14px;
+            height: 14px;
+        }
+    }
+
+    @media only screen and (max-width: 800px) {
+        &__container {
+            flex-direction: column;
+        }
+
+        &__section {
+            max-width: 100%;
+            margin-bottom: 40px;
+        }
+
+        &__contacts {
+            margin-bottom: 20px;
+        }
+    }
+}

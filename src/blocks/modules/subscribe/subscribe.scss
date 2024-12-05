@@ -1,0 +1,58 @@
+.subscribe {
+    padding-top: 108px;
+    padding-bottom: 60px;
+    background-color: $grey-100;
+
+    &__wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__form {
+        width: 386px;
+    }
+
+    &__inp {
+        max-width: 386px;
+    }
+
+    &__btn {
+        color: $text-white;
+        padding: 10px 20px;
+    }
+
+    &__title {
+        font-family: $RedHatDisplay-Medium;
+        font-size: rem(36);
+        line-height: rem(46);
+        text-align: center;
+    }
+
+    @media only screen and (max-width: 1000px) {
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__title {
+            margin-bottom: 20px;
+        }
+    }
+
+    @media only screen and (max-width: 460px) {
+        &__title {
+            font-size: rem(30);
+            line-height: rem(40);
+        }
+
+        &__form {
+            width: 100%;
+        }
+
+        &__inp {
+            max-width: 100%;
+        }
+    }
+}
